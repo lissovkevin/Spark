@@ -1,5 +1,4 @@
 import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
 
 export default function habits() {
     return (
@@ -12,11 +11,11 @@ export default function habits() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#25292e',
+        backgroundColor: '#FAFAFA',
         justifyContent: 'center',
         alignItems: 'center',
     },
     text: {
-        color: '#fff',
+        color: '#111827',
     },
 })
