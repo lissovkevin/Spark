@@ -1,4 +1,5 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View } from 'react-native';
+import { colors } from '../../themes/colors';
 
 export default function Index() {
     return (
@@ -12,18 +13,14 @@ export default function Index() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#FAFAFA',
-        alignItems: "center",
+        backgroundColor: colors.background,
+        alignItems: 'center',
     },
     Text: {
         fontSize: 40,
-        color: '#111827'
+        color: colors.textPrimary,
     },
     underline: {
-        color: '#6B7280'
+        color: colors.textSecondary,
     },
-    link: {
-        color: 'black',
-        fontSize: 20,
-    }
 });
