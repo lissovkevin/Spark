@@ -27,6 +27,7 @@ export default function TabLayout() {
                         fontSize: 20,
                     },
                     headerShadowVisible: false,
+                    headerTitleAlign: 'left',
                 }}
             />
             <Tabs.Screen
@@ -50,6 +51,7 @@ export default function TabLayout() {
                         fontSize: 20,
                     },
                     headerShadowVisible: false,
+                    headerTitleAlign: 'left',
                 }}
             />
         </Tabs>
