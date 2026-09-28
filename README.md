@@ -2,6 +2,8 @@
 
 A habit tracking app built with React Native and Expo. Track your daily habits, maintain streaks, and build consistency.
 
+> **Status:** Work in progress
+
 ## Tech Stack
 
 - **Framework:** Expo (expo-router)
@@ -12,51 +14,58 @@ A habit tracking app built with React Native and Expo. Track your daily habits, 
 
 ## Features
 
-- Track daily habits with streak tracking
+**Implemented**
 - Custom animated bottom tab bar
+
+**Planned**
+- Track daily habits with streak tracking
 - Real-time data sync with Firestore
-- Cross-platform (iOS, Android, Web)
+- Cross-platform support (iOS, Android, Web)
 
 ## Getting Started
 
 ### Prerequisites
 
 - Node.js
-- Expo CLI
+- Expo Go or an emulator
 - A Firebase project with Firestore enabled
 
 ### Installation
 
 1. Clone the repo
-   ```bash
-   git clone https://github.com/lissovkevin/spark.git
-   cd spark
-   ```
+
+```bash
+git clone https://github.com/lissovkevin/spark.git
+cd spark
+```
 
 2. Install dependencies
-   ```bash
-   npm install
-   ```
+
+```bash
+npm install
+```
 
 3. Set up Firebase
 
-   Create a `src/lib/firebase.ts` file with your Firebase config:
-   ```ts
-   import { initializeApp } from 'firebase/app';
-   import { getFirestore } from 'firebase/firestore';
+Create a `src/lib/firebase.ts` file with your Firebase config:
 
-   const firebaseConfig = {
-     // your config here
-   };
+```ts
+import { initializeApp } from 'firebase/app';
+import { getFirestore } from 'firebase/firestore';
 
-   const app = initializeApp(firebaseConfig);
-   export const db = getFirestore(app);
-   ```
+const firebaseConfig = {
+  // your config here
+};
+
+const app = initializeApp(firebaseConfig);
+export const db = getFirestore(app);
+```
 
 4. Start the app
-   ```bash
-   npx expo start
-   ```
+
+```bash
+npx expo start
+```
 
 ## Project Structure
 
@@ -77,3 +86,7 @@ src/
 └── themes/
     └── colors.ts
 ```
+
+## Author
+
+Kevin Lissov
